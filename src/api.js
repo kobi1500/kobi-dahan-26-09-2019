@@ -4,7 +4,7 @@ const API = "Z8igLMATFAS9ZMzk0OcMWn8xhey83xUa";
 export const getForecast = key => {
   return axios({
     method: "get",
-    url: `http://dataservice.accuweather.com/currentconditions/v1/${key}`,
+    url: `https://dataservice.accuweather.com/currentconditions/v1/${key}`,
     params: {
       apikey: API
     }
@@ -14,7 +14,7 @@ export const getForecast = key => {
 export const getFiveDayForecast = key => {
   return axios({
     method: "get",
-    url: `http://dataservice.accuweather.com/forecasts/v1/daily/5day/${key}`,
+    url: `https://dataservice.accuweather.com/forecasts/v1/daily/5day/${key}`,
     params: {
       apikey: API
     }
@@ -38,7 +38,7 @@ const filterResults = results => {
 export const promiseOptions = (inputValue, cb) => {
   axios({
     method: "get",
-    url: "http://dataservice.accuweather.com/locations/v1/cities/autocomplete",
+    url: "https://dataservice.accuweather.com/locations/v1/cities/autocomplete",
     params: {
       apikey: API,
       q: inputValue.replace(/[^A-Za-z]/gi, "")
@@ -53,7 +53,7 @@ export const promiseOptions = (inputValue, cb) => {
 export const locationQuery = key => {
   return axios({
     method: "get",
-    url: `http://dataservice.accuweather.com/locations/v1/${key}`,
+    url: `https://dataservice.accuweather.com/locations/v1/${key}`,
     params: {
       apikey: API
     }
