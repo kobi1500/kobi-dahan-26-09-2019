@@ -1,0 +1,30 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+body {
+  margin: 0;
+}
+
+
+
+.results {
+  position: absolute;
+  max-height: 150px;
+  width: 100%;
+  z-index: 2;
+  color: red;
+  overflow: auto;
+  padding: 0 15px 0 0;
+  background-color: white;
+}
+
+.myCol {
+  padding: 0
+}
+
+.text-size-0{
+  font-size: 1.3vw;
+}
+
+.text-size-1{
+  font-size: 2vw;
+}

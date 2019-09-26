@@ -1,0 +1,45 @@
+
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+body {
+  margin: 0;
+  background: #f0f0f0;
+
+}
+
+
+
+.results {
+  position: absolute;
+  max-height: 150px;
+  width: 100%;
+  z-index: 2;
+  color: red;
+  overflow: auto;
+  padding: 0 15px 0 0;
+  background-color: white;
+}
+
+.myCol {
+  padding: 0
+}
+
+.text-size-0{
+  font-size: 1.3vw;
+}
+
+.text-size-1{
+  font-size: 2vw;
+}
+
+
+@media (max-width:767px){
+    .search{
+        font-size: 15px;
+    }
+    .results{
+        width:100px;
+        padding: 15px;
+        text-align: center;
+    }
+}
